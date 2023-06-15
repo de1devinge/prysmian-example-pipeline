@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Example pipeline for prysmian ship.
+Resources:
+  MyBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: prysmian-example-bucket
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
