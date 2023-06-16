@@ -10,3 +10,13 @@ Resources:
         BlockPublicPolicy: false
         IgnorePublicAcls: false
         RestrictPublicBuckets: false
+
+  MySecondBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: prysmian-example-bucket-two
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
